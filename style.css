@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #000000; /* Black */
+    --secondary-color: #ff6600;
+    --accent-color: #ff0000;
+    --highlight-color: #0066ff;
+    --background-color: #111111;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-color); /* Black text color */
+    background-color: var(--background-color);
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-color); /* Black text color */
+    line-height: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color); /* Black text color */
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 0 20px;
+}
+
+nav {
+    background-color: var(--background-color);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.main-nav {
+    justify-content: space-between;
+    padding-block: 16px;
+}
+
+.company-logo {
+    color: var(--highlight-color);
+}
+
+.nav-links ul {
+    gap: 24px;
+    font-weight: 500;
+}
+
+.hover-link {
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    color: #f9fdff; /* Black text color */
+}
+
+.hover-link:hover {
+    background-color: rgba(255, 102, 0, 0.2);
+}
+
+.hover-link:active {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.nav-item.active {
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+}
+
+.search-bar {
+    height: 32px;
+    gap: 8px;
+}
+
+.news-input {
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+    font-family: "Roboto", sans-serif;
+    color: var(--primary-color); /* Black text color */
+}
+
+.search-button {
+    background-color: #665b5b;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+.search-button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+main {
+    padding-block: 20px;
+    margin-top: 80px;
+}
+
+.cards-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+
+.card {
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.news-title {
+    color: var(--primary-color); /* Black text color */
+}
+
+.news-source {
+    margin-block: 12px;
+    color: var(--primary-color); /* Black text color */
+}
+
+.news-desc {
+    color: var(--primary-color); /* Black text color */
+}
+
+.market,
+.stocks,
+.investing {
+    color: #ffffff; /* White text color */
+}
